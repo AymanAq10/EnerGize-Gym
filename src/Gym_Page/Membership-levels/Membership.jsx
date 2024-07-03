@@ -6,7 +6,7 @@ import taskicon from '../icons/icon _task.svg'
 function Membership() {
     return (
         <>
-            <section class="offers"><div class="offers-content">
+            <section id="offers" class="offers"><div class="offers-content">
                 <div class="offer-text">
                     <div></div><div><h2>Our pass types</h2><p>Join over 2,300 fitness enthusiasts who have already stepped up their game at our gym!</p>
                     </div>
