@@ -7,7 +7,7 @@ import './AboutUs.css';
 function AboutUs() {
 
     return (
-        <section className="container">
+        <section id="about" className="container">
             <div className="img-side">
                 <div>
                     <span></span>
