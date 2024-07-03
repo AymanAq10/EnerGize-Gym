@@ -2,7 +2,7 @@ import React from 'react'
 import './Services.css'
 function Services() {
   return (
-    <div className='S-container'>
+    <div id="services" className='S-container'>
       <div className='line'></div>
       <h1>Services We Provide</h1>
       <section className='content' >
