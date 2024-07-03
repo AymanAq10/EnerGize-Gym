@@ -92,7 +92,7 @@ function Membership() {
 
 
             </section>
-            <section className='SWO'>
+            <section id="contact" className='SWO'>
                 <h1>Start Work Out </h1>
                 <h2>Welcome to <span><span className='head-text'>E</span>nergize <span className='head-text'>G</span>ym</span></h2>
                 <div className='footer'>
