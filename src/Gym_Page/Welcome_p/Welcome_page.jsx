@@ -37,17 +37,17 @@ function Welcome_page() {
 
   return (
     <div className='Container'>
-      <header>
+      <header id="home">
         <div>
           <span>EG</span>
           <img src={logo} />
         </div>
         <nav>
-          <a href='#'>Home</a>
-          <a href='#'>Services</a>
-          <a href='#'>Offers</a>
-          <a href='#'>About Us</a>
-          <a href='#'>Contact</a>
+          <a href='#home'>Home</a>
+          <a href='#services'>Services</a>
+          <a href='#offers'>Offers</a>
+          <a href='#about'>About Us</a>
+          <a href='#contact'>Contact</a>
         </nav>
         <div className='mobile-nav'>
           <div></div>
