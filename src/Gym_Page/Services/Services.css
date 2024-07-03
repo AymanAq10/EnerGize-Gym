@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.S-container {
+    padding: 0 60px;
+}
+
+.S-container>.line {
+    width: 3px;
+    height: 150px;
+    background: #E91E63;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+.S-container>h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: system-ui;
+    width: 80%;
+    text-transform: none;
+    letter-spacing: 0;
+    background: linear-gradient(to right, #7543B4 0%, #7543B4 20%, #E91E63 75%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    width: 100%;
+    margin: 3rem 0 20rem 0;
+}
+
+section.content {
+    width: 100%;
+    display: flex;
+    font-family: system-ui;
+    align-items: center;
+    justify-content: flex-start;
+    counter-increment: content_counter;
+}
+
+section.content>.img {
+    width: 526px;
+    height: 466px;
+    background-size: cover;
+    background-position: center;
+}
+
+section.content:nth-of-type(1)>.img {
+    background-image: url('../imgs/EmployeeBenefits.png');
+
+}
+
+section.content:nth-of-type(2)>.img {
+    background-image: url('../imgs/GymOwner.png');
+
+}
+
+section.content:nth-of-type(3)>.img {
+    background-image: url('../imgs/HussleBlog.png');
+
+}
+
+section.content:nth-of-type(4)>.img {
+    background-image: url('../imgs/Refer_a_Friend.png');
+}
+
+
+
+
+section.content>div>p {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+section.content>div>h2 {
+    background: linear-gradient(to right, #E91E63, #7543B4 30%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.8em;
+}
+
+
+section.content>div:last-child {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background: hsl(214.29deg 94.59% 92.75% / 47%);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(6px);
+    border-width: 2px;
+    border-style: dashed;
+    border-color: hsl(266.55deg 45.75% 48.43% / 61%);
+    /* position: absolute; */
+    /* left: 30%; */
+    translate: -6rem;
+}
+
+section.content>div>p:first-child:before {
+    position: absolute;
+    content: 'Service ' counter(content_counter);
+    top: 20px;
+    color: #7B1FA2;
+    letter-spacing: 2px;
+}
+
+
+
+.S-container>section.content:nth-of-type(even) {
+    justify-content: flex-start;
+    margin: 15% 0;
+    flex-direction: row-reverse;
+}
+
+.S-container>section.content:nth-of-type(even)>div:last-child {
+    translate: 6rem;
+}
+
+@media screen and (max-width:780px) {  
+    div.S-container{
+        width: 750px;
+    }
+}
+@media screen and (min-width:781px) and (max-width:992px) {
+
+    div.S-container {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:992px) {
+
+    section.content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.content>div:last-child {
+        translate: none;
+        width: 526px;
+        translate: 0 -6rem;
+    }
+
+    .S-container>section.content:nth-of-type(even) {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .S-container>section.content:nth-of-type(even)>div:last-child {
+        translate: 0 -6rem;
+    }
+}
